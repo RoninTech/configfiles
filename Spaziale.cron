@@ -1,0 +1,10 @@
+# Generated Spaziale schedule:
+# Weekdays on at 745AM
+45 7 * * 1-5 /boot/config/spaz_on.py |& logger
+# Weekends on at 745AM
+45 7 * * 6-7 /boot/config/spaz_on.py |& logger
+# Weekdays off at 1PM
+00 13 * * 1-5 /boot/config/spaz_off.py |& logger
+# Weekends off at 1PM
+00 13 * * 6-7 /boot/config/spaz_off.py |& logger
+
