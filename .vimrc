@@ -1,3 +1,5 @@
+set complete+=kspell
+set spellfile=~/.vim/spell/en.utf-8.add
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -18,7 +20,7 @@ set number      "show line numbers
 
 "display tabs and trailing spaces
 set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
@@ -295,6 +297,7 @@ endfunction
 
 "spell check when writing commit logs
 autocmd filetype svn,*commit* setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell
 
 "http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 "hacks from above (the url, not jesus) to delete fugitive buffers when we
