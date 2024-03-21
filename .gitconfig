@@ -1,0 +1,5 @@
+[user]
+	email = paul-rimmer@ronin-tech.com
+	name = Paul Rimmer
+[pull]
+	rebase = false
